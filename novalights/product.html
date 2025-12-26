@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Workshop Kit (9 Pack) | Novalights</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="container">
+        <a href="index.html" class="logo">NOVA<span style="color:var(--primary)">LIGHTS</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html#products">Products</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="index.html#products" class="btn btn-primary">Shop Now</a>
+    </nav>
+
+    <div class="container product-detail-container" style="padding-top: 4rem; padding-bottom: 4rem;">
+        <div class="product-gallery">
+            <div class="main-image">
+                <img src="assets/novalights_9pack_white_theme_1766746788881.png" alt="Master Workshop Kit">
+            </div>
+            <div class="thumbnail-grid">
+                <img src="assets/novalights_9pack_white_theme_1766746788881.png" class="active"
+                    onclick="changeImage(this)">
+                <img src="assets/novalights_6pack_white_theme_1766746773925.png" onclick="changeImage(this)">
+                <img src="assets/novalights_product_isolated_1766745962628.png" onclick="changeImage(this)">
+                <img src="assets/novalights_garage_wall_detail_1766747135979.png" onclick="changeImage(this)">
+            </div>
+        </div>
+
+        <div class="product-details-panel">
+            <h1 class="p-title">Master Workshop Kit (9 Pack)</h1>
+            <div class="p-rating">★★★★★ <span>(28 Reviews)</span></div>
+            <div class="p-price">$599.99 <span class="old-price">$799.99</span> <span class="save-badge">Save
+                    $200</span></div>
+
+            <p class="p-description">
+                The ultimate lighting solution for double-bay garages and professional workshops.
+                Our Master Kit delivers shadowless, 6500K daylight illumination that transforms any workspace into a
+                showroom.
+            </p>
+
+            <div class="p-options">
+                <label>Dimensions</label>
+                <div class="option-pill">2.4m x 4.8m Grid</div>
+            </div>
+
+            <div class="p-options">
+                <label>Configuration Style</label>
+                <div class="config-grid">
+                    <div class="config-item selected title='Hexagon Grid'">
+                        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M50 10 L85 30 L85 70 L50 90 L15 70 L15 30 Z" />
+                        </svg>
+                        <span>Hex Grid</span>
+                    </div>
+                    <div class="config-item title='Linear Grid'">
+                        <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="10" y="20" width="80" height="60" />
+                        </svg>
+                        <span>Linear</span>
+                    </div>
+                    <!-- Add more dummy visual selectors if needed -->
+                </div>
+            </div>
+
+            <div class="p-actions">
+                <input type="number" value="1" min="1" class="qty-input">
+                <button class="btn btn-primary full-width">Add to Cart</button>
+            </div>
+
+            <div class="p-meta">
+                <div class="meta-item">
+                    <span>🚚 Free Shipping</span>
+                </div>
+                <div class="meta-item">
+                    <span>🛡️ 5 Year Warranty</span>
+                </div>
+                <div class="meta-item">
+                    <span>⚡ Plug & Play</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <h3>NOVA<span style="color:var(--primary)">LIGHTS</span></h3>
+            <p>Sydney, Australia</p>
+            <p>&copy; 2025 Novalights. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(el) {
+            document.querySelector('.main-image img').src = el.src;
+            document.querySelectorAll('.thumbnail-grid img').forEach(img => img.classList.remove('active'));
+            el.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
